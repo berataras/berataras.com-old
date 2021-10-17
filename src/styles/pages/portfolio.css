@@ -1,0 +1,10 @@
+.single-portfolio {
+  margin-bottom: 30px;
+  overflow: hidden;
+  transition: 300ms all;
+}
+.single-portfolio:hover {
+  transform: translateY(-10px);
+}
+
+/*# sourceMappingURL=portfolio.css.map */

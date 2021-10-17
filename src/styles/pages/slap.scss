@@ -1,0 +1,33 @@
+@import "../utils/variables";
+
+.slap-item {
+  position: relative;
+  margin-bottom: 40px;
+  i {
+    font-size: 40px;
+    color: #ff4157;
+    margin-bottom: 30px;
+    display: inline-block;
+  }
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1;
+    @media (max-width: $screenMd) {
+      line-height: 1.8;
+    }
+    a {
+      color: inherit;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  p {
+    color: #595875;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+}

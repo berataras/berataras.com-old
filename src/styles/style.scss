@@ -1,0 +1,71 @@
+@import "https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&amp;display=swap";
+@import "https://fonts.googleapis.com/css?family=Josefin+Sans:400,700&amp;display=swap";
+
+
+body {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Dosis", sans-serif;
+  line-height: 28px;
+  margin: 0;
+  position: relative;
+  background-color: #18181B;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bolder;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  &:link {
+    text-decoration: none;
+  }
+  &:hover {
+    text-decoration: none;
+    transition: all 0.4s ease;
+    color: inherit;
+  }
+  &:focus {
+    text-decoration: none;
+  }
+  &:active {
+    text-decoration: none;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.secondary-bg {
+  background-color: #ff4157;
+}
+
+.white-btn {
+  background: #fff;
+  color: #070707;
+  &:hover {
+    color: #070707;
+  }
+}
+
+.red-btn {
+  background: #ff4157;
+  color: #fff;
+  &:hover {
+    color: #fff;
+  }
+}
+
+
+
+
