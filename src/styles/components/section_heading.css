@@ -6,6 +6,11 @@
   margin-bottom: 25px;
   text-transform: uppercase;
 }
+@media (max-width: 1500px) {
+  .section-heading h2 {
+    font-size: 45px;
+  }
+}
 @media (max-width: 990px) {
   .section-heading h2 {
     font-size: 30px;

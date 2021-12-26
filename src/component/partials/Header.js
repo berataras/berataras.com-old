@@ -1,12 +1,13 @@
 import Link from "next/link";
 import {BsFillMenuButtonWideFill, BsMenuApp} from "react-icons/bs";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {useRouter} from "next/router";
+import {GrSun} from 'react-icons/gr';
 
 function Header(){
     const [viewMenu, setViewMenu] = useState(false);
-
     const [status, setStatus] = useState(false);
+
     setTimeout(() => {
         setStatus(true)
     }, 300)
@@ -17,9 +18,34 @@ function Header(){
 
     const showMenu = () => setViewMenu(!viewMenu)
 
+    const darkModeToggleHandle = () => {
+        const html = document.querySelector('html');
+       if (!html.classList.contains('dark-mode')){
+           html.classList.add('dark-mode');
+           html.classList.remove('light-mode');
+           localStorage.setItem('mode', 'dark');
+       }else{
+           html.classList.add('light-mode');
+           html.classList.remove('dark-mode');
+           localStorage.setItem('mode', 'light');
+       }
+    }
+
+    useEffect(() => {
+        const html = document.querySelector('html');
+        const hasMode = localStorage.getItem('mode');
+
+        if (!hasMode){
+            localStorage.setItem('mode', 'dark');
+        }else if(hasMode === 'dark'){
+            html.classList.add('dark-mode');
+        }else if(hasMode === 'light'){
+            html.classList.add('light-mode');
+        }
+    }, [])
     return(
         <header>
-        <div className="container">
+        <div className="container d-flex align-items-center justify-content-between">
             <ul>
                 {status &&
                     <li onClick={() => showMenu()}>
@@ -35,6 +61,10 @@ function Header(){
                     </div>
                 }
             </ul>
+
+            <div className="d-flex">
+                <GrSun size={30} onClick={darkModeToggleHandle} className="sunIcon" />
+            </div>
         </div>
         </header>
     )

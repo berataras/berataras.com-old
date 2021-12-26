@@ -4,7 +4,7 @@ function SectionHeading(props) {
     const {title, desc} = props;
     return (
         <div className="section-heading">
-            <h2>{title} <span></span></h2>
+            <h2>{title} <span className="not-invert"></span></h2>
             {desc &&
                 <p>
                     {desc}

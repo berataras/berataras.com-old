@@ -8,6 +8,9 @@
     line-height: 1;
     margin-bottom: 25px;
     text-transform: uppercase;
+    @media (max-width: 1500px){
+      font-size: 45px;
+    }
     @media (max-width: $screenMd) {
       font-size: 30px;
     }
