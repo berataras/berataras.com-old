@@ -7,7 +7,7 @@ export default function slap(){
 
                 <div className="row mb-4">
                     <div className="col-xl-7">
-                        <SectionHeading title="SLAP" desc="Bulup beğendiğim her şeyi yabıştırdığım kısım." />
+                        <SectionHeading title="SLAP" desc="The part where I paste everything I find and like." />
                     </div>
                 </div>
 

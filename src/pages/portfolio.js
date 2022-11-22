@@ -6,7 +6,7 @@ export default function Portfolio(){
             <div className="container">
                 <div className="row mb-4">
                     <div className="col-xl-7">
-                        <SectionHeading title="Portfolyo" desc="Buraya çeşitli fotoğraflar gelir :)" />
+                        <SectionHeading title="Portfolio" desc="Soon :)" />
                     </div>
                 </div>
                 <div className="row gallery">
@@ -15,13 +15,6 @@ export default function Portfolio(){
                             <div className="portfolio-img">
                                 <img src="/img/portfolio/port2.png" alt="berat aras" />
 
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-xl-4 col-lg-4 col-md-6" data-tag="me">
-                        <div className="single-portfolio">
-                            <div className="portfolio-img">
-                                <img src="/img/portfolio/port1.png" alt="berat aras" />
                             </div>
                         </div>
                     </div>

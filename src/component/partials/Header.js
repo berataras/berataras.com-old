@@ -50,14 +50,14 @@ function Header(){
                 {status &&
                     <li onClick={() => showMenu()}>
                         {viewMenu ? <BsMenuApp size={20} />  : <BsFillMenuButtonWideFill size={20} /> }
-                        {viewMenu === false ? <span className="ml-2">Göz At</span> : ''}
+                        {viewMenu === false ? <span className="ml-2">Browse</span> : ''}
                     </li>
                 }
                 { viewMenu &&
                     <div className='menu'>
-                        <li><Link href="/"><a className={link === '' ? 'active' : null}>Ben Kimim?</a></Link></li>
+                        <li><Link href="/"><a className={link === '' ? 'active' : null}>Who am I?</a></Link></li>
                         <li><Link href="/slap"><a className={link === 'slap' ? 'active' : null}>Slap</a></Link></li>
-                        <li><Link href="/portfolio"><a className={link === 'portfolio' ? 'active' : null}>Portfolyo</a></Link></li>
+                        <li><Link href="/portfolio"><a className={link === 'portfolio' ? 'active' : null}>Portfolio</a></Link></li>
                     </div>
                 }
             </ul>
