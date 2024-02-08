@@ -26,7 +26,7 @@ export default function Home() {
                     <div className="col-xl-5 col-lg-5 col-md-12 offset-xl-1 offset-lg-1 ">
                         <div className="about-img-content">
                             <div className="about-img">
-                                <img src="/img/about/about3.jpg" alt="Berat Aras"/>
+                                <img src="/img/berataras.jpg" alt="Berat Aras"/>
                             </div>
                         </div>
                     </div>

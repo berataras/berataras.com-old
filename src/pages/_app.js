@@ -10,7 +10,6 @@ function MyApp({ Component, pageProps }) {
           <Head>
               <title>Berat Aras</title>
           </Head>
-          <Header />
         <Component {...pageProps} />
       </div>
   )
